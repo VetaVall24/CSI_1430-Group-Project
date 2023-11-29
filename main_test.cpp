@@ -1,7 +1,2 @@
-#include <iostream> 
-using namespace std;
-
-int main() {
-  cout << "Hi" << endl;
-  return 0;
-}
+classes (circle, square, triangle, balls, newball);
+functions (newrow, losegame, difficultyincrease, disappear, shoot, increaseballmax)
