@@ -3,6 +3,7 @@
 
 #include "SDL_Plotter.h"
 #include "force.h"
+#include "ball.h"
 
 using namespace std;
 
