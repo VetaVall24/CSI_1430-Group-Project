@@ -7,6 +7,7 @@
 using namespace std;
 
 void NewRow();
+void Collision();
 void CreateObject(int, int);
 void LoseGame();
 void DifficultyIncrease(int&, int&);
