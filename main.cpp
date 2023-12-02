@@ -1,1 +1,1 @@
-//classes (circle, square, triangle, balls, newball);
+//classes (circle, square, triangle, newball);
