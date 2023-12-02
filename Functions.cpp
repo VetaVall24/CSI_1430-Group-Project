@@ -11,9 +11,15 @@ void NewRow() {
     }
     
 }
+
 void CreateObject(int x, int loc);
 void LoseGame();
-void DifficultyIncrease();
+
+void DifficultyIncrease(int& min, int& max) {
+    min++;
+    max++;
+}
+
 void Disappear();
 void Shoot();
 void IncreaseBalls();
