@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void NewRow();
+void NewRow(const int&, const int&);
 void Collision();
 void CreateObject(int, int);
 void LoseGame();
