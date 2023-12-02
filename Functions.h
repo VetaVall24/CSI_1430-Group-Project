@@ -6,11 +6,11 @@
 
 using namespace std;
 
-void NewRow(const int&, const int&);
+void NewRow(const int&);
 void Collision();
 void CreateObject(int, int, int);
 void LoseGame();
-void DifficultyIncrease(int&, int&);
+void DifficultyIncrease(int&);
 void Disappear();
 void Shoot();
 void IncreaseBalls(int&);
