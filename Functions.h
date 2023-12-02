@@ -8,7 +8,7 @@ using namespace std;
 
 void NewRow(const int&, const int&);
 void Collision();
-void CreateObject(int, int);
+void CreateObject(int, int, int);
 void LoseGame();
 void DifficultyIncrease(int&, int&);
 void Disappear();
