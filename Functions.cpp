@@ -1,6 +1,17 @@
 #include "Functions.h"
 
-void NewRow();
+void NewRow() {
+    int x;
+
+    for(int i = 0; i < 3; i++) {
+        x = rand() % 5;
+        if(x > 0) {
+            CreateObject(x, i);
+        }
+    }
+    
+}
+void CreateObject(int x, int loc);
 void LoseGame();
 void DifficultyIncrease();
 void Disappear();
