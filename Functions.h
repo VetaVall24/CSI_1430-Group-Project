@@ -6,7 +6,12 @@
 
 using namespace std;
 
-
+void NewRow();
+void LoseGame();
+void DifficultyIncrease();
+void Disappear();
+void Shoot();
+void IncreaseBalls();
 
 
 #endif /* Functions_h */
