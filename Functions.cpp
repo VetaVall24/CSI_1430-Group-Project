@@ -1,19 +1,21 @@
 #include "Functions.h"
 
-void NewRow() {
+void NewRow(const int& min, const int& max) {
     int x;
+    int health;
 
     for(int i = 0; i < 3; i++) {
         x = rand() % 5;
         if(x > 0) {
-            CreateObject(x, i);
+            health = (rand() % max) - min;
+            CreateObject(x, i, health);
         }
     }
     
 }
 
 void Collision();
-void CreateObject(int x, int loc);
+void CreateObject(int x, int loc, int health);
 void LoseGame();
 
 void DifficultyIncrease(int& min, int& max) {
