@@ -9,10 +9,10 @@ using namespace std;
 void NewRow();
 void CreateObject(int, int);
 void LoseGame();
-void DifficultyIncrease();
+void DifficultyIncrease(int&, int&);
 void Disappear();
 void Shoot();
-void IncreaseBalls();
+void IncreaseBalls(int&);
 
 
 #endif /* Functions_h */
