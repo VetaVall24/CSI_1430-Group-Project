@@ -12,6 +12,7 @@ void NewRow() {
     
 }
 
+void Collision();
 void CreateObject(int x, int loc);
 void LoseGame();
 
@@ -22,4 +23,7 @@ void DifficultyIncrease(int& min, int& max) {
 
 void Disappear();
 void Shoot();
-void IncreaseBalls();
+
+void IncreaseBalls(int& numBalls) {
+    numBalls++;
+}
