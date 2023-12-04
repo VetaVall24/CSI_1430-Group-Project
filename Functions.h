@@ -7,9 +7,9 @@
 
 using namespace std;
 
-void NewRow(const int&);
+void NewRow(const int&, string, int);
 void Collision();
-void CreateObject(int, int, int);
+void CreateObject(int, int);
 void LoseGame();
 void DifficultyIncrease(int&);
 void Disappear();
