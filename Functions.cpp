@@ -1,3 +1,6 @@
+//Jacob Dieguez
+//Group Project
+
 #include "Functions.h"
 
 void NewRow(const int& min, string shapes[], int healths[]) {
