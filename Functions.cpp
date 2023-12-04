@@ -17,7 +17,7 @@ bool NewRow(const int& min, string shapes[], int healths[]) {
     }
     
     for(int i = 0; i < 3; i++) {
-        x = rand() % 5;
+        x = rand() % 6;
         if(x > 0) {
             health = (rand() % 4) + min;
             shapes[0][i] = CreateObject(x, i);
@@ -43,8 +43,11 @@ string CreateObject(int x, int loc) {
     else if (x == 3) {
         name = "square";
     }
-    else {
+    else if (x == 4){
         name = "triangle";
+    }
+    else {
+        name = "new ball";
     }
     
     return name;
