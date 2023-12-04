@@ -1,6 +1,6 @@
 #include "Functions.h"
 
-void NewRow(const int& min, string shapes[]) {
+void NewRow(const int& min, string shapes[], int healths[]) {
     int x;
     int health;
 
@@ -9,6 +9,7 @@ void NewRow(const int& min, string shapes[]) {
         if(x > 0) {
             health = (rand() % 4) + min;
             shapes[0][i] = CreateObject(x, i);
+            healths[0][i] = health;
         }
     }
     
