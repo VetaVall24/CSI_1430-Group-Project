@@ -11,7 +11,7 @@
 using namespace std;
 
 bool NewRow(const int&, string, int);
-void Collision();
+void Collision(int, int, string, int);
 void CreateObject(int, int);
 bool LoseGame(int);
 void DifficultyIncrease(int&);
