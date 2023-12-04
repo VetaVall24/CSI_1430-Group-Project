@@ -1,6 +1,6 @@
 #include "Functions.h"
 
-void NewRow(const int& min) {
+void NewRow(const int& min, string shapes[]) {
     int x;
     int health;
 
@@ -8,24 +8,29 @@ void NewRow(const int& min) {
         x = rand() % 5;
         if(x > 0) {
             health = (rand() % 4) + min;
-            CreateObject(x, i, health);
+            shapes[0][i] = CreateObject(x, i);
         }
     }
     
 }
 
 void Collision();
-void CreateObject(int x, int loc, int health) {
+string CreateObject(int x, int loc) {
     int width, height, locX, locY = 3;
     color c;
+    string name;
+    
     if(x == 1 || x == 2) {
         width = height = 1;
+        name = "circle";
     }
     else if (x == 3) {
         width = height = 1;
+        name = "square";
     }
     else {
         width = height = 1;
+        name = "triangle";
     }
     
     if(loc = 0) {
@@ -39,6 +44,7 @@ void CreateObject(int x, int loc, int health) {
     }
     
     Shape(locX, locY, width, height, c);
+    return name;
 }
 
 void LoseGame();
