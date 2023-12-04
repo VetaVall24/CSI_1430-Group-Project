@@ -10,12 +10,12 @@
 
 using namespace std;
 
-void NewRow(const int&, string, int);
+bool NewRow(const int&, string, int);
 void Collision();
 void CreateObject(int, int);
-void LoseGame();
+bool LoseGame(int);
 void DifficultyIncrease(int&);
-void Disappear();
+void Disappear(int, int, string, int);
 void Shoot();
 void IncreaseBalls(int&);
 
