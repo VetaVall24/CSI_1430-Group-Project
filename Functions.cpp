@@ -27,7 +27,12 @@ bool NewRow(const int& min, string shapes[], int healths[]) {
     return lost;
 }
 
-void Collision();
+void Collision(int row, int col, string shapes[], int healths[]) {
+    healths[row][col] -= 1;
+    if(healths[row][col] = 0) {
+        disappear(row, col, shapes[], healths[]);
+    }
+}
 
 string CreateObject(int x, int loc) {
     string name;
